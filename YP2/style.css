@@ -1,0 +1,751 @@
+* hr{
+  width: 100%;  
+}
+*{
+    font-family:  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+ #start a, #Explore a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+  background-color: #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vh;
+    font-family: 'Abril Fatface';
+    border-bottom: 2px solid black;
+
+    /* border: 2px solid black; */
+    border-radius: 4px;
+}
+.navbar img{
+    width: 150px;
+    height: 100px;
+    padding: 0%;
+    align-items: center;
+}
+.leftnav{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+    gap: 1px;
+}
+.navbar h2{
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-items: center;
+}
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+}
+.nav-items h4{
+    font-size: 1.5vw;
+    font-family: 'Abril Fatface';
+    cursor: pointer;
+    transition: font-size 0.5s, color 0.5s;
+}
+.nav-items h4:hover{
+    font-size: 2vw;
+    color: lightseagreen;
+}
+/* .nav-items i{
+    display: none;
+} */
+.nav-items button{
+    font-size: 1vw;
+    padding: 0.5vw 1.5vw;
+    margin: 1vw;
+    border: none;
+    background-color: lightseagreen;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    animation:fadeIn 2s 1;
+    transition: font-size 0.7s;
+}
+.nav-items button:hover{
+    font-size: 2vw;
+}
+
+.content{
+    width: 100%;
+    height: calc(100vh - 119px);
+    /* 100px is height of Navbar */
+    display: flex;
+    flex-direction: row;
+}
+.left{
+background-color: white;
+height: 100%;
+width: 55%;
+padding:5vw 4vw;
+}
+.left h1{
+    font-size: 4.5vw;
+    font-family: 'Abril Fatface';
+    font-weight: 1200;
+    text-shadow: 34px;
+}
+.left span{
+    font-size: 4vw;
+    color:lightseagreen;
+    font-family: 'Abril Fatface';
+}
+
+.left p {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+}
+.left button{
+    font-size: 1.5vw;
+    padding: 1vw 2.3vw;
+    border: none;
+    background-color: lightseagreen;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    animation: fadeInUpBig 1s 1; 
+}
+.left button:hover {
+    transform: scale(1.1);
+    background-color: #ff6b6b; /* A different color for the hover effect */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+}
+
+.right{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 45%;
+    padding: 10px 8vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  background-color: rgba(29, 192, 184, 0.377);
+    overflow: hidden;
+}
+
+.right img{
+    width: 100%;
+    height: auto;
+    margin-top: 35%;
+      
+}
+
+.sec2 span{
+    color: lightseagreen;
+    font-size: 4vw;
+    font-family: 'Abril Fatface';
+    
+}
+.sec2 .sec2Head{
+    font-size: 4.5vw;
+    margin-left: 30vw;
+    text-decoration:wavy;
+    font-family: 'Abril Fatface';
+
+}
+    
+
+.serviceContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    margin-left: 2vw;
+
+   
+}
+.serviceContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .service {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .service:hover {
+    background-color: lightseagreen;
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+  
+  .service h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+  }
+  
+  .service p {
+    font-size: 1rem;
+    color: #666;
+  }
+.service h1{
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+.service{
+    border-top: 2px solid rgb(0, 0, 0);
+    font-size: x-large;
+    font-family: 'Caveat', cursive;
+    animation: fadeInUpBig 3.5s 1; 
+}
+
+.sec2 button{
+    font-size: 1.9vw;
+    padding: 0.5vw 1.5vw;
+    border: none;
+    background-color: lightseagreen;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    margin-left: 2vw;
+    position: relative;
+    margin-top:1%;
+}
+.sec2 h1{
+font-size: 2.5vw;
+font-weight: 700;
+
+}
+.sec3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+   
+}
+.sec3 h1{
+    font-size: 4vw;
+    font-family: 'Abril Fatface';
+    text-decoration: underline;
+}
+.sec3 marquee{
+    border: 2px solid rgb(255, 255, 255);
+    margin: 1% 0% ;
+    gap: 2vw;
+}
+.sec3 marquee img{
+    width: 300px;
+    height: 300px;
+}
+
+
+
+/* ***********Event Page********** */
+
+.latestEvent{
+    width: 100%;
+    height: 200%;
+    /* 100px is height of Navbar */
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+}
+.latestEvent a{
+    text-decoration: none;
+    text-align: center;
+    background-color:#ffc540;
+    font-size: 1.4vw;
+    padding: 3%;
+border-radius: 9%;
+    font-weight: 700;
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+}
+.imgSec{
+    background-color: white;
+height: 100%;
+width: 55%;
+padding:1vw 2vw;
+}
+.imgSec img{
+    width: 90%;
+  height: 85vh;
+}
+.textSec{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 45%;
+    padding: 10vw 5vw;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+  background-color: rgba(29, 192, 184, 0.377);
+    overflow: hidden;
+}
+
+.upcomingEvents{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.upcomingEvents h1{
+    font-size: 2.5vw;
+}
+.upcomingEvents marquee{
+    border: 2px solid rgb(255, 255, 255);
+    margin: 1% 0% ;
+    gap: 2vw;
+}
+.upcomingEvents marquee img{
+    width: 300px;
+    height: 300px;
+}
+.pastEvents{
+    display: flex;
+    flex-direction: column;
+}
+.pastEvents div{
+    background-color: #dadada;
+    border: 2px solid lightseagreen;
+    border-radius: 23px;
+    display: flex;
+    flex-direction: row;
+    gap: 9vw;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+}
+.pastEvents span{
+    font-size: 2vw;
+    font-weight: 700;
+}
+.pastEvents img{
+    width: 300px;
+    height: 300px;
+}
+.pastEvents a{
+    background-color: orange;
+    color: white;
+    padding: 1vw;
+    border-radius: 23px;
+    text-decoration: none;
+}
+.members{
+    display: flex;
+    flex-direction: row;
+    height: 86vh;
+    background-color: rgba(29, 192, 184, 0.377);
+    padding: 5%;
+}
+
+.members marquee{
+    border: 2px solid rgb(255, 255, 255);
+    margin: 1% 0% ;
+    gap: 2vw;
+    background-color: #ffffff4d;
+    border: none;
+
+    
+}
+.members marquee div {
+    width: auto;
+    height: 400px;
+    background-color: lightcyan;
+    color: black;
+    border: 2px solid lightseagreen;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+.members div span{
+    font-weight: 700;
+    font-size: x-large;
+}
+.members marquee img{
+    width: 150px;
+    height: 150px;
+    margin-left:0;
+}
+
+.aboutUs{
+    margin: 2vw;
+    font-family: 'Abril Fatface';
+
+}
+.aboutFirst{
+    display: flex;
+    flex-direction: row;
+}
+.aboutFirst img{
+    margin: 2vw;
+width: 60vw;
+height: 60vh;
+border-radius: 7%;
+
+}
+.aboutUs img{
+    width: 50%;
+}
+.aboutOne{
+        background-color: rgba(51, 173, 167, 0.281);
+        border: 2px solid black;
+        border-radius: 23px;
+        padding: 2vw;
+        margin: 2vw;
+
+}
+.aboutUs h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 2.6vw;
+    align-items: center;
+
+    font-family: 'Abril Fatface';
+}
+.aboutOne p span{
+    font-weight: 800;
+    font-size: x-large;
+    font-family: 'Abril Fatface';
+}
+.aboutOne p{
+    font-size: 1.2vw;
+    font-family: 'Abril Fatface';
+}
+.secHead{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 2.6vw;
+    align-items: center;
+text-decoration: underline;
+    font-family: 'Abril Fatface';
+}
+.aboutTwo{
+    display: flex;
+    flex-direction: row;
+    padding: 1.5vw;
+}
+.aboutTwo p{
+    background-color: rgba(51, 173, 167, 0.281);
+    border: 2px solid black;
+    border-radius: 23px;
+    padding: 2vw;
+    margin: 2vw;
+    font-family: 'Roboto Slab', serif;
+}
+.aboutTwo p span{
+    font-weight: 800;
+    font-size: x-large;
+    font-family: 'Abril Fatface';
+}
+.aboutTwo p{
+    font-size: 1.2vw;
+    font-family: 'Roboto Slab', serif;
+}
+.aboutTwo img{
+    margin: 2vw;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 7%;
+}
+
+.aboutTeam{
+    display: flex;
+    flex-direction: row;
+
+justify-content: center;
+    padding: 1vw;
+}
+.aboutTeam a{
+    background-color: #dadada;
+    border: 2px solid black;
+    border-radius: 23px;
+    padding: 2vw;
+    margin: 1.22vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.aboutTeam a img{
+    width: 30vw;
+    height: 50vh;
+    border-radius: 23px;
+    margin-left: 4vw;
+}
+
+footer {
+    background-color: rgba(32, 178, 171, 0.486);
+    color: rgb(2, 53, 51);
+    padding: 20px;
+ 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.footer-logo img {
+    width: 100px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 1%;
+    margin: 1%;
+    width: 8vw;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    border-radius: 34px;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: white;
+ 
+    font-size: 18px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    margin-left: 5%;
+}
+
+/* Add any additional CSS styling as needed */
+
+@media (max-width:600px) {
+
+     /* .navbar{
+        background-color: lightseagreen;
+        color: white;
+    }
+    .navbar h2{
+        font-size: 6vw;
+    }
+    .nav-items h4{
+        display: none;
+    }
+    .nav-items i{
+        display: block;
+        font-size: 6vw;
+        font-weight: 800;
+    } */
+    /* Your existing CSS code */
+
+/* Add responsive styles for smaller screens */
+ 
+.navbar{
+    background-color: lightseagreen;
+    color: white;
+    height: 9vh;
+    margin-left: 0;
+    display: flex;
+    justify-content:flex-start;
+}
+.navbar h2{
+    font-size: 4vw;
+    margin-top: auto;
+    margin-left: 0;
+}
+.leftnav img{
+margin: 0;
+width: 40vw;
+height: 9vh;
+}
+.nav-items h4{
+    display: none;
+}
+.nav-items i{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 6vw;
+    font-weight: 800;
+}
+.left {
+    padding: 3vw 2vw;
+}
+
+.left h1 {
+    font-size: 5vw;
+}
+
+.left span {
+    font-size: 6vw;
+}
+
+.left p {
+    font-size: 2.5vw;
+}
+
+.left button {
+    font-size: 3vw;
+    padding: 0.7vw 1.8vw;
+}
+
+.right{
+    height: 40%;
+}
+.right img {
+padding: 0;
+margin: 0;
+    width: 300px;
+    height: 22vh;
+}
+
+.serviceContainer {
+    gap: 2%;
+}
+
+.service {
+    font-size: large;
+    animation: fadeInUpBig 3.5s 1;
+}
+
+.sec2 button {
+    font-size: 2.5vw;
+    padding: 0.3vw 1.2vw;
+    margin-top: 2%;
+}
+
+.sec2 h1 {
+    font-size: 4vw;
+}
+
+.sec3 h1 {
+    font-size: 4vw;
+}
+
+.sec3 marquee img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Add responsive styles for event page */
+.latestEvent a {
+    font-size: 2vw;
+    padding: 2%;
+}
+
+.imgSec img {
+    width: 100%;
+    height: auto;
+}
+
+.textSec {
+    padding: 5vw 2vw;
+}
+
+.upcomingEvents h1 {
+    font-size: 4vw;
+}
+
+.upcomingEvents marquee img {
+    width: 200px;
+    height: 200px;
+}
+
+.pastEvents div {
+    font-size: 2vw;
+    gap: 5vw;
+}
+
+.pastEvents span {
+    font-size: 3vw;
+}
+
+.pastEvents img {
+    width: 200px;
+    height: 200px;
+}
+
+.aboutUs h1 {
+    font-size: 5vw;
+}
+
+.aboutOne p span {
+    font-size: large;
+}
+
+.aboutOne p {
+    font-size: 2vw;
+}
+
+.aboutTwo p span {
+    font-size: large;
+}
+
+.aboutTwo p {
+    font-size: 2vw;
+}
+
+.aboutTeam a {
+    padding: 3vw;
+    margin: 1vw;
+}
+
+.members marquee img {
+    width: 100px;
+    height: 100px;
+
+}
+
+
+/* Your existing media queries and other CSS rules */
+}
